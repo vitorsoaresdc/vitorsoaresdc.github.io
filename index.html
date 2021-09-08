@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <title>Vitor Soares</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="img-foto">
+            <center>
+            <img id="img" src="assets/images/minha-foto.jpg" alt="">
+        </center>
+            <h2>Vitor Soares</h2>
+
+            <div class="redes">
+                <a target="_blank" href="https://github.com/vitorsoaresdc">
+                <img src="assets/images/github.png" alt=""> 
+                <h5>Github</h5>
+            </a>
+            </div>
+
+            <div class="redes">
+                <a target="_blank" href="https://www.linkedin.com/in/vitorsoaresdc/">
+                <img src="assets/images/linkedin.png" alt=""> 
+                <h5>Linkedin</h5>
+            </a>
+            </div>
+
+            <div class="redes">
+                <a target="_blank" href="https://www.instagram.com/vitorsoaresdc/">
+                <img src="assets/images/instagram.png" alt=""> 
+                <h5>Instagram</h5>
+            </a>
+            </div>
+
+            <div class="redes">
+                <a target="_blank" href="https://twitter.com/vitorsoaresdc">
+                <img src="assets/images/twitter.png" alt=""> 
+                <h5>Twitter</h5>
+            </a>
+            </div>
+
+        </div>
+
+      <div class="box"> 
+        <h1>Sobre mim!</h1>
+        <div class="texto-sobre">
+            <h3>Olá! Meu nome é Vitor Sou aluno do CEFET/RJ Nova Friburgo. E apaixonado por tecnologia. Meu foco e trilhar no mundo da programação e me especializar no desenvolvimento Back-End.</h3>
+        </div>
+        <hr>
+
+        <h1>Minhas Skils</h1>
+
+        <div class="minhas-skils">
+            <h4>HTML - Intermediário.</h4>
+            <h4>CSS - Intermediário.</h4>
+            <h4>Design Responsivo - Intermediário.</h4>
+            <h4>PHP - Intermediário.</h4>
+            <h4>Mysql - Básico.</h4>
+            <h4>JavaScript - Básico.</h4>
+            <h4>Linguagem C - Estudando.</h4>
+        </div>
+
+        <h2>Projetos</h2>
+        <div class="projetos">
+            <h4><a target="_blank" href="http://www.demorodavel.com/">demorodavel.com</a></h4>
+            <h4><a target="_blank" href="https://vitorsoaresdc.github.io/game_estourar_baloes/">Game estourar balões</a></h4>
+            <h4><a target="_blank" href="https://vitorsoaresdc.github.io/site3-empresa-de-mudancas/">Empresa de mudanças</a></h4>
+            <h4><a target="_blank" href="https://vitorsoaresdc.github.io/site-4-cerulean/">Cerulean</a></h4>
+            <h4><a target="_blank" href="http://betarodavel.com/">betarodavel.com</a></h4>
+        </div>
+
+        <div class="contato">
+            <h2>Contato</h2>
+            <form method="POST">
+                Nome:<br>
+                <input type="nome"> <br>
+                Email: <br>
+                <input type="email"> <br>
+                Assunto:<br>
+                <input id="assunto" type="text"> <br><br>
+                Mensagem:<br>
+                <textarea name="" id="" cols="45" rows="7"></textarea><br>
+                <button>Enviar</button>
+
+            </form>
+
+        </div>
+
+    </div> 
+    
+    </div>
+
+    <div class="telegram">
+        <a target="_blank" href="https://t.me/vitorsoaresdc">
+        <img src="assets/images/telegram-logo.png" alt="">
+        </a>
+    </div>
+
+    <footer>
+        <h2>Todos direitos reservados © </h2>
+
+    </footer>
+    
+
+      <script>
+        function typeWriter(elemento) {
+          const textoArray = elemento.innerHTML.split('');
+          elemento.innerHTML = '';
+          textoArray.forEach((letra, i) => {
+            setTimeout(() => elemento.innerHTML += letra, 65 * i);
+          });
+        }
+      
+        const titulo = document.querySelector('h3');
+        typeWriter(titulo);
+      </script>
+
+</body>
+</html>
